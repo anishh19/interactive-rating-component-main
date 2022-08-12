@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: black;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    background-image: linear-gradient(to top right, hsl(213, 19%, 18%),hsl(214, 48%, 12%));
+    width: 400px;
+    border-radius: 20px;
+    padding: 2em;
+    justify-content: space-between;
+    
+}
+#ratings{
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+div#ratings > button{
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: hsl(0, 0%, 100%)
+
+}
+
+div#ratings + button{
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+    border-radius: 20px;
+    padding: 0.5em 0em 0.5em 0em;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    font-size: 1.5em;
+}
+
+div#container> p{
+    color: hsl(217, 12%, 63%);
+    font-size: 1.2em;
+}
+
+div#ratings > button:active{
+    background-color: hsl(25, 97%, 53%);
+}
+
+div#ratings > button:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+
+div#ratings > button:focus{
+    background-color: hsl(217, 12%, 63%);
+}
+
+div#ratings + button:hover{
+    background-color: hsl(0, 0%, 100%);
+    color:  hsl(25, 97%, 53%);
+}
+
+#thank-you{
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#rated{
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 5px;
+    width: 50%;
+    margin-top: 10px;
+}
